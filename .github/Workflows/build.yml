@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Validate gradle wrapper
+        uses: gradle/actions/wrapper-validation@v4
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+          cache: "gradle"
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: ./gradlew build --no-daemon
+      - name: Check jar name
+        run: |
+          ls -l build/libs
+          test -f "build/libs/fpsdisplay-4.1.2.1+1.21.1.jar"
+      - name: Upload mod jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: fpsdisplay-4.1.2.1+1.21.1
+          path: build/libs/fpsdisplay-4.1.2.1+1.21.1.jar
+          if-no-files-found: error
