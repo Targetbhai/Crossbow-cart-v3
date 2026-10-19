@@ -1,0 +1,16 @@
+{
+  "text.fpsdisplay.options.fallback_title": "FPS-Display Einstellungen Hinweis",
+  "text.fpsdisplay.options.fallback_message": "Bitte installiere 'Cloth Config API' oder 'YetAnotherConfigLib', um auf das Optionsmenü zugreifen zu können",
+  "text.fpsdisplay.options.title": "FPS-Display Einstellungen",
+  "text.fpsdisplay.options.enabled": "Aktiv",
+  "text.fpsdisplay.options.advancedStats": "Zeige minimale, durchschittliche und maximale FPS",
+  "text.fpsdisplay.options.textSize": "Textgröße",
+  "text.fpsdisplay.options.textColor": "Textfarbe",
+  "text.fpsdisplay.options.textAlpha": "Textsichtbarkeit",
+  "text.fpsdisplay.options.textShadows": "Textschatten",
+  "text.fpsdisplay.options.offsetTop": "Abstand von oben",
+  "text.fpsdisplay.options.offsetLeft": "Abstand von links",
+  "text.fpsdisplay.options.keybindMode": "Tastenkombinations Modus",
+  "key.fpsdisplay.category": "FPS-Display",
+  "key.fpsdisplay.toggleOverlay": "FPS Anzeige umschalten"
+}

@@ -1,0 +1,11 @@
+{
+    "text.fpsdisplay.options.enabled": "Activado",
+    "text.fpsdisplay.options.textSize": "Tamaño del texto",
+    "text.fpsdisplay.options.textColor": "Color del texto",
+    "text.fpsdisplay.options.textAlpha": "Opacidad del texto",
+    "text.fpsdisplay.options.textShadows": "Sombras del texto",
+    "text.fpsdisplay.options.offsetTop": "Distancia desde la arriba",
+    "text.fpsdisplay.options.offsetLeft": "Distancia desde la izquierda",
+    "key.fpsdisplay.category": "FPS-Display",
+    "key.fpsdisplay.toggleOverlay": "Conmutar el superposición de FPS"
+}
